@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <title>提交网站 | ToolDock 工具导航</title>
+    <meta name="description" content="向 ToolDock 提交新的优质工具网站。">
+    <link rel="icon" href="./assets/images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-plus" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12h14"></path>
+      </symbol>
+      <symbol id="icon-copy" viewBox="0 0 24 24">
+        <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </symbol>
+      <symbol id="icon-trash" viewBox="0 0 24 24">
+        <path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15"></path>
+      </symbol>
+    </svg>
+
+    <div class="form-page">
+      <header class="simple-header">
+        <a class="brand" href="./index.html" aria-label="ToolDock 首页">
+          <img src="./assets/images/logo.svg" alt="" width="38" height="38">
+          <span>
+            <strong>ToolDock</strong>
+            <small>网站提交</small>
+          </span>
+        </a>
+        <nav class="simple-nav" aria-label="页面导航">
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于</a>
+        </nav>
+      </header>
+
+      <main class="form-layout">
+        <section class="form-panel">
+          <p class="eyebrow">提交入口</p>
+          <h1>推荐一个值得收藏的网站</h1>
+          <p>提交内容会进入本机待审核队列，便于整理后写入资源数据。</p>
+
+          <form id="submitForm">
+            <div class="field-grid">
+              <label class="field">
+                <span>网站名称</span>
+                <input name="name" type="text" required maxlength="40" placeholder="例如：Figma">
+              </label>
+
+              <label class="field">
+                <span>网站地址</span>
+                <input name="url" type="url" required placeholder="https://example.com">
+              </label>
+
+              <label class="field">
+                <span>分类</span>
+                <select name="category" id="categorySelect" required></select>
+              </label>
+
+              <label class="field">
+                <span>标签</span>
+                <input name="tags" type="text" placeholder="AI, 写作, 设计">
+              </label>
+
+              <label class="field full">
+                <span>一句话描述</span>
+                <textarea name="description" required maxlength="140" placeholder="它最适合解决什么问题？"></textarea>
+                <small>建议控制在 60 字以内。</small>
+              </label>
+
+              <label class="field full">
+                <span>推荐理由</span>
+                <textarea name="note" maxlength="240" placeholder="可选"></textarea>
+              </label>
+
+              <label class="field full">
+                <span>联系方式</span>
+                <input name="contact" type="text" placeholder="邮箱、GitHub 或其他方式，可选">
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="button primary" type="submit">
+                <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
+                <span>提交</span>
+              </button>
+              <button class="button" type="reset">清空</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="queue-panel" aria-label="待审核队列">
+          <header>
+            <h2>待审核队列</h2>
+            <button class="icon-button" id="copyQueue" type="button" aria-label="复制 JSON">
+              <svg class="icon" aria-hidden="true"><use href="#icon-copy"></use></svg>
+            </button>
+          </header>
+          <div class="submission-list" id="submissionList"></div>
+          <div class="form-actions" style="padding: 0 16px 16px;">
+            <button class="button" id="clearQueue" type="button">
+              <svg class="icon" aria-hidden="true"><use href="#icon-trash"></use></svg>
+              <span>清空队列</span>
+            </button>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="./assets/js/submit.js" type="module"></script>
+  </body>
+</html>

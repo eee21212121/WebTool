@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <title>关于 | ToolDock 工具导航</title>
+    <meta name="description" content="ToolDock 的站点说明与静态部署信息。">
+    <link rel="icon" href="./assets/images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+    <div class="form-page">
+      <header class="simple-header">
+        <a class="brand" href="./index.html" aria-label="ToolDock 首页">
+          <img src="./assets/images/logo.svg" alt="" width="38" height="38">
+          <span>
+            <strong>ToolDock</strong>
+            <small>关于本站</small>
+          </span>
+        </a>
+        <nav class="simple-nav" aria-label="页面导航">
+          <a href="./index.html">首页</a>
+          <a href="./submit.html">提交</a>
+        </nav>
+      </header>
+
+      <main class="about-layout">
+        <section class="about-panel">
+          <p class="eyebrow">站点定位</p>
+          <h1>一个轻量、可维护、适合静态部署的工具导航站</h1>
+          <p>
+            ToolDock 面向个人、团队和内容站点使用，资源数据与页面结构分离，
+            适合托管到 Vercel、Cloudflare Pages、Netlify 或 GitHub Pages。
+          </p>
+        </section>
+
+        <section class="about-grid" aria-label="站点能力">
+          <article class="about-item">
+            <strong>数据驱动</strong>
+            <span>分类与网站收录集中维护在 data/tools.json，页面会自动渲染。</span>
+          </article>
+          <article class="about-item">
+            <strong>纯静态</strong>
+            <span>没有数据库和后端依赖，Vercel 导入仓库即可部署。</span>
+          </article>
+          <article class="about-item">
+            <strong>可扩展</strong>
+            <span>后续可以接入表单服务、搜索索引、登录或审核后台。</span>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

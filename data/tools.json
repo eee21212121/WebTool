@@ -1,0 +1,264 @@
+{
+  "categories": [
+    {
+      "id": "ai",
+      "name": "AI 工具",
+      "description": "对话、检索、创作和自动化",
+      "accent": "#35a894"
+    },
+    {
+      "id": "developer",
+      "name": "开发工程",
+      "description": "代码、文档、调试和部署",
+      "accent": "#5967cf"
+    },
+    {
+      "id": "design",
+      "name": "设计创意",
+      "description": "界面、图形、配色和素材",
+      "accent": "#df6a74"
+    },
+    {
+      "id": "office",
+      "name": "办公协作",
+      "description": "文档、翻译、知识库和团队协同",
+      "accent": "#c98418"
+    },
+    {
+      "id": "data",
+      "name": "数据处理",
+      "description": "格式转换、可视化和表格工具",
+      "accent": "#258fbe"
+    },
+    {
+      "id": "learning",
+      "name": "学习资料",
+      "description": "教程、课程、社区和参考文档",
+      "accent": "#7c6a42"
+    }
+  ],
+  "tools": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "url": "https://chat.openai.com/",
+      "description": "通用 AI 助手，适合写作、编程、分析和头脑风暴。",
+      "category": "ai",
+      "tags": ["AI", "写作", "编程"],
+      "featured": true
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "description": "带来源引用的 AI 搜索，适合快速调研。",
+      "category": "ai",
+      "tags": ["AI", "搜索", "研究"],
+      "featured": true
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "url": "https://claude.ai/",
+      "description": "长文本理解、文档分析和创意写作助手。",
+      "category": "ai",
+      "tags": ["AI", "文档", "写作"]
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "url": "https://gemini.google.com/",
+      "description": "Google 的多模态 AI 助手。",
+      "category": "ai",
+      "tags": ["AI", "Google", "多模态"]
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com/",
+      "description": "代码托管、协作开发、Issue 和 Actions 自动化。",
+      "category": "developer",
+      "tags": ["代码", "协作", "DevOps"],
+      "featured": true
+    },
+    {
+      "id": "mdn",
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/",
+      "description": "Web 标准、浏览器 API 和前端技术参考。",
+      "category": "developer",
+      "tags": ["文档", "前端", "Web"]
+    },
+    {
+      "id": "stack-overflow",
+      "name": "Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "description": "开发者问答社区，适合查找真实问题与解决方案。",
+      "category": "developer",
+      "tags": ["问答", "编程", "社区"]
+    },
+    {
+      "id": "can-i-use",
+      "name": "Can I use",
+      "url": "https://caniuse.com/",
+      "description": "查询 Web 特性的浏览器兼容性。",
+      "category": "developer",
+      "tags": ["兼容性", "CSS", "浏览器"]
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "url": "https://vercel.com/",
+      "description": "前端应用和静态站点部署平台。",
+      "category": "developer",
+      "tags": ["部署", "静态站", "前端"],
+      "featured": true
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "url": "https://www.figma.com/",
+      "description": "协作式 UI 设计、原型和设计系统平台。",
+      "category": "design",
+      "tags": ["UI", "原型", "协作"],
+      "featured": true
+    },
+    {
+      "id": "excalidraw",
+      "name": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "description": "手绘风流程图、线框图和白板工具。",
+      "category": "design",
+      "tags": ["白板", "流程图", "草图"]
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "url": "https://www.canva.com/",
+      "description": "海报、演示文稿和社交媒体图片设计。",
+      "category": "design",
+      "tags": ["平面", "模板", "图片"]
+    },
+    {
+      "id": "color-hunt",
+      "name": "Color Hunt",
+      "url": "https://colorhunt.co/",
+      "description": "配色灵感和色板集合。",
+      "category": "design",
+      "tags": ["配色", "灵感", "色板"]
+    },
+    {
+      "id": "unsplash",
+      "name": "Unsplash",
+      "url": "https://unsplash.com/",
+      "description": "高质量摄影图片素材。",
+      "category": "design",
+      "tags": ["图片", "素材", "摄影"]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "url": "https://www.notion.so/",
+      "description": "知识库、项目文档和团队协作空间。",
+      "category": "office",
+      "tags": ["文档", "知识库", "协作"]
+    },
+    {
+      "id": "google-drive",
+      "name": "Google Drive",
+      "url": "https://drive.google.com/",
+      "description": "文件存储、共享和在线协作。",
+      "category": "office",
+      "tags": ["云盘", "文档", "协作"]
+    },
+    {
+      "id": "deepl",
+      "name": "DeepL",
+      "url": "https://www.deepl.com/translator",
+      "description": "高质量机器翻译和文本润色。",
+      "category": "office",
+      "tags": ["翻译", "写作", "语言"]
+    },
+    {
+      "id": "xmind",
+      "name": "Xmind",
+      "url": "https://xmind.app/",
+      "description": "思维导图和结构化笔记工具。",
+      "category": "office",
+      "tags": ["思维导图", "笔记", "结构化"]
+    },
+    {
+      "id": "squoosh",
+      "name": "Squoosh",
+      "url": "https://squoosh.app/",
+      "description": "浏览器内图片压缩与格式转换。",
+      "category": "data",
+      "tags": ["图片", "压缩", "转换"],
+      "featured": true
+    },
+    {
+      "id": "tinypng",
+      "name": "TinyPNG",
+      "url": "https://tinypng.com/",
+      "description": "PNG、JPG 和 WebP 图片压缩。",
+      "category": "data",
+      "tags": ["图片", "压缩", "WebP"]
+    },
+    {
+      "id": "json-formatter",
+      "name": "JSON Formatter",
+      "url": "https://jsonformatter.org/",
+      "description": "JSON 格式化、校验、压缩和转换。",
+      "category": "data",
+      "tags": ["JSON", "格式化", "开发"]
+    },
+    {
+      "id": "regex101",
+      "name": "Regex101",
+      "url": "https://regex101.com/",
+      "description": "正则表达式测试、解释和分享。",
+      "category": "data",
+      "tags": ["正则", "测试", "开发"]
+    },
+    {
+      "id": "tableconvert",
+      "name": "TableConvert",
+      "url": "https://tableconvert.com/",
+      "description": "表格、Markdown、CSV、JSON 和 SQL 互转。",
+      "category": "data",
+      "tags": ["表格", "CSV", "转换"]
+    },
+    {
+      "id": "freecodecamp",
+      "name": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/",
+      "description": "免费编程课程、练习和项目。",
+      "category": "learning",
+      "tags": ["课程", "编程", "练习"]
+    },
+    {
+      "id": "roadmap",
+      "name": "roadmap.sh",
+      "url": "https://roadmap.sh/",
+      "description": "开发者学习路线图和技能清单。",
+      "category": "learning",
+      "tags": ["路线图", "学习", "开发"]
+    },
+    {
+      "id": "coursera",
+      "name": "Coursera",
+      "url": "https://www.coursera.org/",
+      "description": "大学和机构提供的在线课程平台。",
+      "category": "learning",
+      "tags": ["课程", "证书", "学习"]
+    },
+    {
+      "id": "runoob",
+      "name": "菜鸟教程",
+      "url": "https://www.runoob.com/",
+      "description": "中文编程入门教程和示例。",
+      "category": "learning",
+      "tags": ["中文", "教程", "编程"]
+    }
+  ]
+}

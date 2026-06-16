@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <title>ToolDock 工具导航 | 高效资源工作台</title>
+    <meta name="description" content="ToolDock 是一个面向开发、设计、AI、办公和内容创作者的静态工具导航站。">
+    <link rel="icon" href="./assets/images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <path d="m21 21-4.35-4.35"></path>
+        <circle cx="11" cy="11" r="7"></circle>
+      </symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <path d="m12 3 2.8 5.67 6.26.91-4.53 4.42 1.07 6.24L12 17.3l-5.6 2.94 1.07-6.24-4.53-4.42 6.26-.91L12 3Z"></path>
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path d="M20.7 15.1A8.5 8.5 0 0 1 8.9 3.3 8.5 8.5 0 1 0 20.7 15.1Z"></path>
+      </symbol>
+      <symbol id="icon-external" viewBox="0 0 24 24">
+        <path d="M14 3h7v7"></path>
+        <path d="M10 14 21 3"></path>
+        <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"></path>
+      </symbol>
+      <symbol id="icon-grid" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+        <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+        <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+        <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+      </symbol>
+      <symbol id="icon-list" viewBox="0 0 24 24">
+        <path d="M8 6h13M8 12h13M8 18h13"></path>
+        <path d="M3 6h.01M3 12h.01M3 18h.01"></path>
+      </symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12h14"></path>
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14"></path>
+        <path d="m13 6 6 6-6 6"></path>
+      </symbol>
+      <symbol id="icon-bookmark" viewBox="0 0 24 24">
+        <path d="M6 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18l-6-3-6 3V4Z"></path>
+      </symbol>
+    </svg>
+
+    <div class="app-shell">
+      <aside class="side-nav" aria-label="资源分类">
+        <a class="brand" href="./index.html" aria-label="ToolDock 首页">
+          <img src="./assets/images/logo.svg" alt="" width="38" height="38">
+          <span>
+            <strong>ToolDock</strong>
+            <small>工具导航</small>
+          </span>
+        </a>
+
+        <nav class="category-nav" id="categoryNav"></nav>
+
+        <div class="side-links">
+          <a class="side-link" href="./submit.html">
+            <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
+            <span>提交网站</span>
+          </a>
+          <a class="side-link" href="./about.html">
+            <svg class="icon" aria-hidden="true"><use href="#icon-bookmark"></use></svg>
+            <span>关于本站</span>
+          </a>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">静态资源工作台</p>
+            <h1>发现常用工具、网站与灵感来源</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button" id="themeToggle" type="button" aria-label="切换深色模式">
+              <svg class="icon theme-sun" aria-hidden="true"><use href="#icon-sun"></use></svg>
+              <svg class="icon theme-moon" aria-hidden="true"><use href="#icon-moon"></use></svg>
+            </button>
+            <a class="primary-action" href="./submit.html">
+              <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
+              <span>提交</span>
+            </a>
+          </div>
+        </header>
+
+        <section class="command-surface" aria-label="工具搜索">
+          <div class="search-box">
+            <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="搜索工具、标签或用途">
+          </div>
+          <div class="surface-actions">
+            <div class="segmented" aria-label="视图切换">
+              <button class="segment active" id="gridView" type="button" aria-label="网格视图">
+                <svg class="icon" aria-hidden="true"><use href="#icon-grid"></use></svg>
+              </button>
+              <button class="segment" id="listView" type="button" aria-label="列表视图">
+                <svg class="icon" aria-hidden="true"><use href="#icon-list"></use></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-row" aria-label="资源统计">
+          <div class="stat-item">
+            <strong id="totalCount">0</strong>
+            <span>资源</span>
+          </div>
+          <div class="stat-item">
+            <strong id="categoryCount">0</strong>
+            <span>分类</span>
+          </div>
+          <div class="stat-item">
+            <strong id="favoriteCount">0</strong>
+            <span>收藏</span>
+          </div>
+        </section>
+
+        <section class="filter-row" aria-label="标签筛选">
+          <button class="pill active" type="button" data-tag="all">全部</button>
+          <div id="tagFilters" class="tag-filter-list"></div>
+        </section>
+
+        <section class="featured-strip" id="featuredStrip" aria-label="精选资源"></section>
+
+        <section class="tools-area" id="toolsArea" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script src="./assets/js/app.js" type="module"></script>
+  </body>
+</html>

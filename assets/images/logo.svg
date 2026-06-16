@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ToolDock">
+  <rect width="64" height="64" rx="14" fill="#101915"/>
+  <path d="M18 20h28v8H18z" fill="#f2b84b"/>
+  <path d="M18 34h18v10H18z" fill="#35a894"/>
+  <path d="M40 34h6v10h-6z" fill="#df6a74"/>
+  <path d="M18 50h28" fill="none" stroke="#f7f8f5" stroke-width="4" stroke-linecap="round"/>
+</svg>
