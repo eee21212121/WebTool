@@ -219,9 +219,9 @@ button {
 }
 
 .workspace {
-  width: min(100%, 1480px);
-  margin: 0;
-  padding: 24px 36px 36px;
+  width: min(calc(100% - clamp(32px, 5vw, 96px)), 1680px);
+  margin: 0 auto;
+  padding: 24px clamp(24px, 2vw, 40px) 36px;
 }
 
 .topbar {
