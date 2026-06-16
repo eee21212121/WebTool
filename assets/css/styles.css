@@ -488,7 +488,7 @@ h1 {
 
 .tool-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 12px;
 }
 
@@ -515,23 +515,34 @@ h1 {
 }
 
 .tool-title-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: grid;
+  gap: 5px;
   min-width: 0;
   margin-bottom: 8px;
 }
 
 .tool-title-row h3 {
-  overflow: hidden;
   margin-bottom: 0;
   font-size: 17px;
+  line-height: 1.22;
+  overflow-wrap: anywhere;
+}
+
+.tool-title-row h3,
+.tool-copy p {
+  display: -webkit-box;
+  overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  -webkit-box-orient: vertical;
+}
+
+.tool-title-row h3 {
+  -webkit-line-clamp: 2;
 }
 
 .tool-category {
-  flex: 0 0 auto;
+  width: fit-content;
+  max-width: 100%;
   padding: 3px 7px;
   border-radius: 999px;
   background: var(--surface-2);
@@ -540,13 +551,10 @@ h1 {
 }
 
 .tool-copy p {
-  display: -webkit-box;
-  overflow: hidden;
   min-height: 42px;
   margin-bottom: 12px;
   color: var(--muted);
   line-height: 1.45;
-  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
 
