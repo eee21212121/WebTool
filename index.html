@@ -7,7 +7,7 @@
     <title>ToolDock 工具导航 | 高效资源工作台</title>
     <meta name="description" content="ToolDock 是一个面向开发、设计、AI、办公和内容创作者的静态工具导航站。">
     <link rel="icon" href="./assets/images/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="./assets/css/styles.css?v=20260616-layout4">
+    <link rel="stylesheet" href="./assets/css/styles.css?v=20260630-content1">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9834479148307674" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -66,6 +66,10 @@
         <nav class="category-nav" id="categoryNav"></nav>
 
         <div class="side-links">
+          <a class="side-link" href="./guides.html">
+            <svg class="icon" aria-hidden="true"><use href="#icon-bookmark"></use></svg>
+            <span>工具指南</span>
+          </a>
           <a class="side-link" href="./submit.html">
             <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
             <span>提交网站</span>
@@ -73,6 +77,10 @@
           <a class="side-link" href="./about.html">
             <svg class="icon" aria-hidden="true"><use href="#icon-bookmark"></use></svg>
             <span>关于本站</span>
+          </a>
+          <a class="side-link" href="./privacy.html">
+            <svg class="icon" aria-hidden="true"><use href="#icon-bookmark"></use></svg>
+            <span>隐私政策</span>
           </a>
         </div>
       </aside>
@@ -82,6 +90,7 @@
           <div>
             <p class="eyebrow">静态资源工作台</p>
             <h1>常用工具、网站与灵感资源</h1>
+            <p class="hero-copy">ToolDock 不是简单堆链接。这里按真实工作场景整理 AI、开发、设计、办公和数据处理工具，并补充适用人群、选择建议和使用边界，帮助你更快判断一个工具是否值得打开。</p>
           </div>
           <div class="topbar-actions">
             <button class="icon-button" id="themeToggle" type="button" aria-label="切换深色模式">
@@ -127,6 +136,28 @@
           </div>
         </section>
 
+        <section class="editorial-panel" aria-label="编辑推荐">
+          <div class="editorial-intro">
+            <p class="eyebrow">编辑说明</p>
+            <h2>先判断场景，再选择工具</h2>
+            <p>我们优先收录稳定、易上手、能解决具体问题的工具。每个分类会说明适合的使用场景，每个工具卡片也会给出推荐理由，避免只看到名字却不知道从哪里开始。</p>
+          </div>
+          <div class="editorial-grid">
+            <article class="editorial-card">
+              <strong>资料调研</strong>
+              <span>需要快速了解一个主题时，先用带来源的搜索工具交叉验证，再用通用 AI 整理成提纲。</span>
+            </article>
+            <article class="editorial-card">
+              <strong>项目启动</strong>
+              <span>开发前先用文档、路线图和兼容性工具确认边界，能少走很多返工路。</span>
+            </article>
+            <article class="editorial-card">
+              <strong>素材处理</strong>
+              <span>图片、表格和格式转换尽量选浏览器内完成的工具，临时任务更轻，隐私风险也更可控。</span>
+            </article>
+          </div>
+        </section>
+
         <section class="filter-row" aria-label="标签筛选">
           <button class="pill active" type="button" data-tag="all">全部</button>
           <div id="tagFilters" class="tag-filter-list"></div>
@@ -134,10 +165,25 @@
 
         <section class="featured-strip" id="featuredStrip" aria-label="精选资源"></section>
 
+        <section class="guide-strip" aria-label="工具选择指南">
+          <a class="guide-card" href="./guides.html#ai-workflow">
+            <span>AI 工作流</span>
+            <strong>写作、搜索和编程助手怎么搭配</strong>
+          </a>
+          <a class="guide-card" href="./guides.html#developer-stack">
+            <span>开发工具</span>
+            <strong>前端项目常用工具选择顺序</strong>
+          </a>
+          <a class="guide-card" href="./guides.html#design-assets">
+            <span>设计素材</span>
+            <strong>从草图到素材处理的轻量组合</strong>
+          </a>
+        </section>
+
         <section class="tools-area" id="toolsArea" aria-live="polite"></section>
       </main>
     </div>
 
-    <script src="./assets/js/app.js?v=20260616-layout4" type="module"></script>
+    <script src="./assets/js/app.js?v=20260630-content1" type="module"></script>
   </body>
 </html>

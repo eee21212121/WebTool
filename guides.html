@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <title>工具选择指南 | ToolDock 工具导航</title>
+    <meta name="description" content="ToolDock 的工具选择指南，帮助你按写作、调研、开发、设计和数据处理场景选择合适工具。">
+    <link rel="icon" href="./assets/images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/styles.css?v=20260630-content1">
+  </head>
+  <body>
+    <div class="form-page">
+      <header class="simple-header">
+        <a class="brand" href="./index.html" aria-label="ToolDock 首页">
+          <img src="./assets/images/logo.svg" alt="" width="38" height="38">
+          <span>
+            <strong>ToolDock</strong>
+            <small>工具指南</small>
+          </span>
+        </a>
+        <nav class="simple-nav" aria-label="页面导航">
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于</a>
+          <a href="./privacy.html">隐私</a>
+        </nav>
+      </header>
+
+      <main class="about-layout">
+        <article class="content-panel">
+          <p class="eyebrow">编辑指南</p>
+          <h1>如何从一堆工具里选到真正能用的那一个</h1>
+          <p>工具导航最容易变成收藏夹仓库：链接很多，但打开之后仍然不知道该先用哪个。ToolDock 的整理原则是先看场景，再看工具。一个工具是否值得收录，不只看它是否流行，也看它能否稳定解决具体问题、是否容易上手、是否适合个人和小团队长期使用。</p>
+          <p>下面这些建议来自常见的工作流程：资料调研、写作整理、前端开发、设计素材处理和临时数据转换。你可以先按自己的任务类型进入，再回到首页筛选对应工具。</p>
+
+          <h2 id="ai-workflow">AI 工作流：写作、搜索和编程助手怎么搭配</h2>
+          <p>AI 工具不是越多越好。多数情况下，一个通用对话助手加一个带来源的搜索工具就够用了。先用搜索型 AI 找信息来源和关键词，再用通用助手整理结构、生成初稿或解释代码，最后回到原始来源核对事实。</p>
+          <ul>
+            <li>资料调研：优先选择能显示来源的工具，方便复查和引用。</li>
+            <li>写作整理：把 AI 当成结构助手，而不是最终作者，尤其是观点和事实需要自己确认。</li>
+            <li>代码辅助：适合解释报错、生成示例和拆解思路，但生产代码仍要测试和审查。</li>
+          </ul>
+          <p>如果你的任务是写文章，可以先让 AI 列出提纲和读者问题，再逐段补充自己的经验。这样内容会比直接生成全文更自然，也更容易形成原创价值。</p>
+
+          <h2 id="developer-stack">开发工具：前端项目常用工具选择顺序</h2>
+          <p>开发时不要一开始就搜索随机答案。更稳的顺序是官方文档、兼容性检查、社区案例、部署验证。MDN 适合查 Web 标准和 API，Can I use 适合确认浏览器兼容性，GitHub 适合跟踪项目和协作，Vercel 适合快速上线静态站和前端应用。</p>
+          <ul>
+            <li>查概念和 API：优先看 MDN 这类维护稳定的文档。</li>
+            <li>遇到报错：看 Stack Overflow 时注意答案时间、依赖版本和上下文。</li>
+            <li>上线前：检查资源体积、路由、404、meta 信息和移动端布局。</li>
+          </ul>
+          <p>如果你只是发布一个静态站，构建系统越简单越好。当前 ToolDock 就采用纯静态方式，数据放在 JSON 文件里，部署时不依赖数据库和后端服务。</p>
+
+          <h2 id="design-assets">设计素材：从草图到素材处理的轻量组合</h2>
+          <p>设计工作可以拆成三步：先表达结构，再确定视觉方向，最后处理素材。Excalidraw 适合快速沟通结构，Figma 适合沉淀界面和组件，Color Hunt 和 Unsplash 则适合补充配色与图片灵感。</p>
+          <ul>
+            <li>讨论功能结构时，不必过早进入高保真设计，草图更利于修改。</li>
+            <li>选择配色时，先确定品牌气质和页面用途，再找接近的色板。</li>
+            <li>使用图片素材前，要确认授权范围，商业页面尤其要谨慎。</li>
+          </ul>
+
+          <h2>数据处理：临时任务优先轻量工具</h2>
+          <p>图片压缩、JSON 格式化、正则测试和表格转换都属于高频但低复杂度的任务。选择这类工具时，重点看操作是否简单、是否能在浏览器内完成、是否需要上传敏感数据。涉及账号、客户资料或内部数据时，建议优先使用本地工具或脱敏后再处理。</p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

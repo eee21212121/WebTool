@@ -4,36 +4,48 @@
       "id": "ai",
       "name": "AI 工具",
       "description": "对话、检索、创作和自动化",
+      "longDescription": "AI 工具适合先处理不确定性：把问题拆清楚、把资料整理成结构、把初稿快速生成出来。选择时不要只看模型热度，更要看它是否支持你的工作场景，例如长文档、网页检索、代码解释或多轮写作。",
+      "bestFor": ["写作提纲", "资料调研", "代码辅助"],
       "accent": "#35a894"
     },
     {
       "id": "developer",
       "name": "开发工程",
       "description": "代码、文档、调试和部署",
+      "longDescription": "开发工具优先看可靠性和可复用性。写代码前先查官方文档和兼容性，遇到问题再看社区案例，发布时选择稳定的托管平台。这样能减少凭经验乱试带来的返工。",
+      "bestFor": ["查文档", "排错", "部署上线"],
       "accent": "#5967cf"
     },
     {
       "id": "design",
       "name": "设计创意",
       "description": "界面、图形、配色和素材",
+      "longDescription": "设计资源不只是找好看的素材，更重要的是让方案更快落地。草图工具适合讨论结构，配色和图片素材适合补足表现层，协作式设计平台适合沉淀组件和规范。",
+      "bestFor": ["原型设计", "配色灵感", "素材查找"],
       "accent": "#df6a74"
     },
     {
       "id": "office",
       "name": "办公协作",
       "description": "文档、翻译、知识库和团队协同",
+      "longDescription": "办公协作工具要解决的是信息流转。个人可以用它们整理知识和文件，团队则需要关注权限、同步和版本管理。选择时尽量让文档、文件和任务减少来回搬运。",
+      "bestFor": ["知识库", "文件协作", "翻译润色"],
       "accent": "#c98418"
     },
     {
       "id": "data",
       "name": "数据处理",
       "description": "格式转换、可视化和表格工具",
+      "longDescription": "数据处理类工具适合临时、高频、低成本的小任务，例如压缩图片、格式化 JSON、测试正则或转换表格。敏感数据建议优先选本地或浏览器内处理的方案。",
+      "bestFor": ["格式转换", "图片压缩", "文本校验"],
       "accent": "#258fbe"
     },
     {
       "id": "learning",
       "name": "学习资料",
       "description": "教程、课程、社区和参考文档",
+      "longDescription": "学习资源的关键不是越多越好，而是路径清晰。入门阶段适合教程和路线图，进阶阶段要回到文档、项目和社区问题，在真实场景里补齐知识缺口。",
+      "bestFor": ["入门路线", "系统课程", "中文教程"],
       "accent": "#7c6a42"
     }
   ],
@@ -44,6 +56,7 @@
       "url": "https://chat.openai.com/",
       "description": "通用 AI 助手，适合写作、编程、分析和头脑风暴。",
       "category": "ai",
+      "recommendation": "适合把零散想法整理成提纲、初稿或操作步骤，也适合作为学习和代码解释的第一站。",
       "tags": ["AI", "写作", "编程"],
       "featured": true
     },
@@ -53,6 +66,7 @@
       "url": "https://www.perplexity.ai/",
       "description": "带来源引用的 AI 搜索，适合快速调研。",
       "category": "ai",
+      "recommendation": "适合需要来源线索的调研任务，可以先用它找方向，再回到原文核对关键信息。",
       "tags": ["AI", "搜索", "研究"],
       "featured": true
     },
@@ -62,6 +76,7 @@
       "url": "https://claude.ai/",
       "description": "长文本理解、文档分析和创意写作助手。",
       "category": "ai",
+      "recommendation": "适合处理较长材料和写作改稿，尤其适合把一批内容整理成摘要、结构和行动项。",
       "tags": ["AI", "文档", "写作"]
     },
     {
@@ -70,6 +85,7 @@
       "url": "https://gemini.google.com/",
       "description": "Google 的多模态 AI 助手。",
       "category": "ai",
+      "recommendation": "适合需要和 Google 生态配合的搜索、资料整理和多模态理解场景。",
       "tags": ["AI", "Google", "多模态"]
     },
     {
@@ -78,6 +94,7 @@
       "url": "https://github.com/",
       "description": "代码托管、协作开发、Issue 和 Actions 自动化。",
       "category": "developer",
+      "recommendation": "适合长期维护项目、追踪问题和自动化发布，是个人项目和团队协作的基础设施。",
       "tags": ["代码", "协作", "DevOps"],
       "featured": true
     },
@@ -87,6 +104,7 @@
       "url": "https://developer.mozilla.org/",
       "description": "Web 标准、浏览器 API 和前端技术参考。",
       "category": "developer",
+      "recommendation": "适合查前端概念和浏览器 API，优先级通常高于零散博客和过期教程。",
       "tags": ["文档", "前端", "Web"]
     },
     {
@@ -95,6 +113,7 @@
       "url": "https://stackoverflow.com/",
       "description": "开发者问答社区，适合查找真实问题与解决方案。",
       "category": "developer",
+      "recommendation": "适合定位报错和边界案例，使用时要注意答案年份和依赖版本是否仍然适用。",
       "tags": ["问答", "编程", "社区"]
     },
     {
@@ -103,6 +122,7 @@
       "url": "https://caniuse.com/",
       "description": "查询 Web 特性的浏览器兼容性。",
       "category": "developer",
+      "recommendation": "适合在使用新 CSS 或 Web API 前快速判断兼容风险，减少上线后的浏览器差异问题。",
       "tags": ["兼容性", "CSS", "浏览器"]
     },
     {
@@ -111,6 +131,7 @@
       "url": "https://vercel.com/",
       "description": "前端应用和静态站点部署平台。",
       "category": "developer",
+      "recommendation": "适合静态站、前端项目和轻量全栈应用，Git 推送后自动部署的体验很顺手。",
       "tags": ["部署", "静态站", "前端"],
       "featured": true
     },
@@ -120,6 +141,7 @@
       "url": "https://www.figma.com/",
       "description": "协作式 UI 设计、原型和设计系统平台。",
       "category": "design",
+      "recommendation": "适合从线框图到高保真设计的完整流程，也适合团队沉淀组件和设计规范。",
       "tags": ["UI", "原型", "协作"],
       "featured": true
     },
@@ -129,6 +151,7 @@
       "url": "https://excalidraw.com/",
       "description": "手绘风流程图、线框图和白板工具。",
       "category": "design",
+      "recommendation": "适合快速画流程、页面结构和沟通草图，不需要复杂设计文件也能表达清楚。",
       "tags": ["白板", "流程图", "草图"]
     },
     {
@@ -137,6 +160,7 @@
       "url": "https://www.canva.com/",
       "description": "海报、演示文稿和社交媒体图片设计。",
       "category": "design",
+      "recommendation": "适合非专业设计人员快速产出海报、封面和展示材料，模板质量比较稳定。",
       "tags": ["平面", "模板", "图片"]
     },
     {
@@ -145,6 +169,7 @@
       "url": "https://colorhunt.co/",
       "description": "配色灵感和色板集合。",
       "category": "design",
+      "recommendation": "适合在确定视觉方向前浏览配色组合，也适合给小项目快速建立颜色基调。",
       "tags": ["配色", "灵感", "色板"]
     },
     {
@@ -153,6 +178,7 @@
       "url": "https://unsplash.com/",
       "description": "高质量摄影图片素材。",
       "category": "design",
+      "recommendation": "适合寻找真实感较强的配图和背景图，使用前仍建议核对授权和具体使用限制。",
       "tags": ["图片", "素材", "摄影"]
     },
     {
@@ -161,6 +187,7 @@
       "url": "https://www.notion.so/",
       "description": "知识库、项目文档和团队协作空间。",
       "category": "office",
+      "recommendation": "适合整理项目资料、会议记录和个人知识库，结构灵活但需要定期维护。",
       "tags": ["文档", "知识库", "协作"]
     },
     {
@@ -169,6 +196,7 @@
       "url": "https://drive.google.com/",
       "description": "文件存储、共享和在线协作。",
       "category": "office",
+      "recommendation": "适合多人共享文件和在线编辑，尤其适合需要跨设备同步的日常办公场景。",
       "tags": ["云盘", "文档", "协作"]
     },
     {
@@ -177,6 +205,7 @@
       "url": "https://www.deepl.com/translator",
       "description": "高质量机器翻译和文本润色。",
       "category": "office",
+      "recommendation": "适合翻译邮件、文档和产品文案，初稿质量较高，但专业内容仍需要人工校对。",
       "tags": ["翻译", "写作", "语言"]
     },
     {
@@ -185,6 +214,7 @@
       "url": "https://xmind.app/",
       "description": "思维导图和结构化笔记工具。",
       "category": "office",
+      "recommendation": "适合梳理复杂主题、课程笔记和项目拆解，把想法先组织成层级结构。",
       "tags": ["思维导图", "笔记", "结构化"]
     },
     {
@@ -193,6 +223,7 @@
       "url": "https://squoosh.app/",
       "description": "浏览器内图片压缩与格式转换。",
       "category": "data",
+      "recommendation": "适合临时处理图片体积和格式，浏览器内操作让小批量素材优化更轻便。",
       "tags": ["图片", "压缩", "转换"],
       "featured": true
     },
@@ -202,6 +233,7 @@
       "url": "https://tinypng.com/",
       "description": "PNG、JPG 和 WebP 图片压缩。",
       "category": "data",
+      "recommendation": "适合快速压缩常见图片格式，适合上线前减少页面图片体积。",
       "tags": ["图片", "压缩", "WebP"]
     },
     {
@@ -210,6 +242,7 @@
       "url": "https://jsonformatter.org/",
       "description": "JSON 格式化、校验、压缩和转换。",
       "category": "data",
+      "recommendation": "适合检查接口返回、配置文件和调试数据，能快速发现括号或字段格式问题。",
       "tags": ["JSON", "格式化", "开发"]
     },
     {
@@ -218,6 +251,7 @@
       "url": "https://regex101.com/",
       "description": "正则表达式测试、解释和分享。",
       "category": "data",
+      "recommendation": "适合边写边验证正则规则，解释面板能帮助定位匹配范围和分组问题。",
       "tags": ["正则", "测试", "开发"]
     },
     {
@@ -226,6 +260,7 @@
       "url": "https://tableconvert.com/",
       "description": "表格、Markdown、CSV、JSON 和 SQL 互转。",
       "category": "data",
+      "recommendation": "适合把临时表格转换成 Markdown、JSON 或 SQL，省去手工整理格式的时间。",
       "tags": ["表格", "CSV", "转换"]
     },
     {
@@ -234,6 +269,7 @@
       "url": "https://www.freecodecamp.org/",
       "description": "免费编程课程、练习和项目。",
       "category": "learning",
+      "recommendation": "适合从练习和项目开始入门编程，学习路径比零散文章更连续。",
       "tags": ["课程", "编程", "练习"]
     },
     {
@@ -242,6 +278,7 @@
       "url": "https://roadmap.sh/",
       "description": "开发者学习路线图和技能清单。",
       "category": "learning",
+      "recommendation": "适合在学习前确认路线和知识边界，避免一开始就被过多资料分散注意力。",
       "tags": ["路线图", "学习", "开发"]
     },
     {
@@ -250,6 +287,7 @@
       "url": "https://www.coursera.org/",
       "description": "大学和机构提供的在线课程平台。",
       "category": "learning",
+      "recommendation": "适合需要系统课程和证书路径的学习者，建议按主题集中学习而不是收藏过多课程。",
       "tags": ["课程", "证书", "学习"]
     },
     {
@@ -258,6 +296,7 @@
       "url": "https://www.runoob.com/",
       "description": "中文编程入门教程和示例。",
       "category": "learning",
+      "recommendation": "适合中文环境下快速查基础语法和示例，入门阶段检索效率很高。",
       "tags": ["中文", "教程", "编程"]
     }
   ]

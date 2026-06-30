@@ -191,7 +191,10 @@ function renderTools() {
   }
 
   if (state.category !== 'all') {
+    const selectedCategory = state.categories.find((category) => category.id === state.category);
+    const categoryIntro = selectedCategory ? categoryIntroBlock(selectedCategory, tools.length) : '';
     els.toolsArea.innerHTML = `
+      ${categoryIntro}
       <div class="tool-grid">
         ${tools.map(toolCard).join('')}
       </div>
@@ -216,6 +219,7 @@ function renderTools() {
         </div>
         <span>${group.tools.length}</span>
       </div>
+      ${categoryIntroBlock(group.category, group.tools.length)}
       <div class="tool-grid">
         ${group.tools.map(toolCard).join('')}
       </div>
@@ -227,6 +231,9 @@ function toolCard(tool) {
   const favorite = state.favorites.has(tool.id);
   const category = getCategoryName(tool.category);
   const tags = tool.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join('');
+  const recommendation = tool.recommendation
+    ? `<div class="tool-reason"><strong>推荐理由</strong><span>${escapeHtml(tool.recommendation)}</span></div>`
+    : '';
 
   return `
     <article class="tool-card">
@@ -238,6 +245,7 @@ function toolCard(tool) {
             <span class="tool-category">${escapeHtml(category)}</span>
           </div>
           <p>${escapeHtml(tool.description)}</p>
+          ${recommendation}
           <div class="tool-tags">${tags}</div>
         </div>
       </div>
@@ -253,6 +261,25 @@ function toolCard(tool) {
   `;
 }
 
+function categoryIntroBlock(category, count) {
+  if (!category?.longDescription && !category?.bestFor) return '';
+  const bestFor = category.bestFor?.length
+    ? `<div class="category-best-for">${category.bestFor.map((item) => `<span>${escapeHtml(item)}</span>`).join('')}</div>`
+    : '';
+  return `
+    <div class="category-intro">
+      <div>
+        <strong>${escapeHtml(category.name)}怎么选</strong>
+        <p>${escapeHtml(category.longDescription || category.description || '')}</p>
+      </div>
+      <div class="category-intro-meta">
+        <span>${count} 个资源</span>
+        ${bestFor}
+      </div>
+    </div>
+  `;
+}
+
 function getFilteredTools() {
   return state.tools.filter((tool) => {
     const inCategory = state.category === 'all'
@@ -262,6 +289,7 @@ function getFilteredTools() {
     const haystack = [
       tool.name,
       tool.description,
+      tool.recommendation || '',
       getCategoryName(tool.category),
       ...tool.tags
     ].join(' ').toLowerCase();
