@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <title>前端静态站上线前检查清单 | ToolDock 专题</title>
+    <meta name="description" content="前端静态站上线前检查清单，覆盖文档查询、浏览器兼容性、Vercel 部署、SEO 文件、404 页面和移动端布局。">
+    <link rel="icon" href="../assets/images/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://web.shin-aier.com/topics/frontend-launch">
+    <link rel="stylesheet" href="../assets/css/styles.css?v=20260701-seo1">
+  </head>
+  <body>
+    <div class="form-page">
+      <header class="simple-header">
+        <a class="brand" href="../index.html" aria-label="ToolDock 首页">
+          <img src="../assets/images/logo.svg" alt="" width="38" height="38">
+          <span>
+            <strong>ToolDock</strong>
+            <small>开发专题</small>
+          </span>
+        </a>
+        <nav class="simple-nav" aria-label="页面导航">
+          <a href="../index.html">首页</a>
+          <a href="../topics.html">专题</a>
+          <a href="../guides.html">指南</a>
+          <a href="../about.html">关于</a>
+        </nav>
+      </header>
+
+      <main class="about-layout">
+        <article class="content-panel">
+          <p class="eyebrow">Launch Checklist</p>
+          <h1>前端静态站上线前检查清单</h1>
+          <p class="topic-meta">适合：Vercel 静态站、工具导航、个人作品集、内容站。</p>
+          <p>静态站上线看起来简单，但容易漏掉移动端、SEO、错误页和缓存策略。上线前按清单走一遍，能减少发布后才发现标题不对、页面打不开、资源缓存异常等问题。</p>
+
+          <h2>上线前先查三类资料</h2>
+          <ul class="check-list">
+            <li>Web API 和语义标签：优先查 MDN，避免使用过时写法。</li>
+            <li>浏览器兼容性：使用 Can I use 确认关键 CSS 和 JS 特性。</li>
+            <li>社区问题：遇到部署报错时再查 Stack Overflow 或 GitHub Issues。</li>
+          </ul>
+
+          <h2>静态站必须检查的文件</h2>
+          <p>首页需要清晰的 title 和 description，内容页也应该有独立标题。<code>robots.txt</code> 用来告诉搜索引擎哪些路径可以抓取，<code>sitemap.xml</code> 用来列出主要页面。404 页面要能从错误路径返回首页或主要内容页，避免用户撞到空白页。</p>
+
+          <h2>布局和性能检查</h2>
+          <p>至少检查桌面、平板和手机宽度。重点看按钮文字是否溢出、卡片是否挤压、导航是否遮挡内容。图片、图标和 JSON 数据可以设置较短缓存，频繁更新的内容不要缓存太久。对于工具导航站，搜索框和分类列表应该比装饰视觉更优先。</p>
+
+          <div class="summary-box">
+            <strong>发布顺序</strong>
+            <p>先本地预览，再推送 GitHub，最后看 Vercel Deployments。部署成功后打开正式域名检查首页、内容页、404、ads.txt、robots.txt 和 sitemap.xml。</p>
+          </div>
+
+          <h2>可搭配的工具</h2>
+          <p><a href="../index.html">回到首页</a>，可以从开发工程分类里查看 GitHub、MDN Web Docs、Stack Overflow、Can I use 和 Vercel。</p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
