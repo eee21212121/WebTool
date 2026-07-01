@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <title>静态网站上线后的 SEO 检查清单 | ToolDock 教程</title>
+    <meta name="description" content="静态网站上线后的 SEO 检查清单，覆盖页面标题、描述、canonical、sitemap、robots、404、内容入口和搜索收录。">
+    <link rel="icon" href="../assets/images/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://web.shin-aier.com/tutorials/static-site-seo-checklist">
+    <link rel="stylesheet" href="../assets/css/styles.css?v=20260701-review1">
+  </head>
+  <body>
+    <div class="form-page">
+      <header class="simple-header">
+        <a class="brand" href="../index.html" aria-label="ToolDock 首页">
+          <img src="../assets/images/logo.svg" alt="" width="38" height="38">
+          <span>
+            <strong>ToolDock</strong>
+            <small>实用教程</small>
+          </span>
+        </a>
+        <nav class="simple-nav" aria-label="页面导航">
+          <a href="../index.html">首页</a>
+          <a href="../tutorials.html">教程</a>
+          <a href="../tools.html">工具</a>
+          <a href="../guides.html">指南</a>
+        </nav>
+      </header>
+
+      <main class="about-layout">
+        <article class="content-panel">
+          <p class="eyebrow">SEO Checklist</p>
+          <h1>静态网站上线后的 SEO 检查清单</h1>
+          <p class="topic-meta">适合：Vercel、Cloudflare Pages、GitHub Pages 和其他纯静态站。</p>
+          <p>静态站上线后，不代表搜索引擎就能顺利理解你的网站。基础 SEO 的重点不是堆关键词，而是让每个重要页面都有清晰标题、描述、规范链接和可发现的入口。</p>
+
+          <h2>基础文件检查</h2>
+          <ul class="check-list">
+            <li><code>robots.txt</code> 可以访问，并且没有误拦截重要页面。</li>
+            <li><code>sitemap.xml</code> 包含首页、专题页、工具详情页和隐私页。</li>
+            <li>每个主要页面都有独立 title、description 和 canonical。</li>
+            <li>404 页面能返回首页、指南或主要内容入口。</li>
+          </ul>
+
+          <h2>内容检查</h2>
+          <p>首页要说明网站定位，分类页或列表页要有编辑说明，详情页要提供真实使用建议。只堆外链容易显得内容薄，最好用教程、专题和工具详情页补充自己的判断。</p>
+
+          <h2>提交收录前检查</h2>
+          <p>打开正式域名，不要只看本地预览。确认 HTTPS 正常、移动端布局不溢出、广告没有出现在空白页或低内容页。然后把 sitemap 提交到 Google Search Console，等待重新抓取。</p>
+
+          <div class="summary-box">
+            <strong>实用建议</strong>
+            <p>每次新增页面后同步更新 sitemap，并从首页、指南页或专题页给它一个内部入口。孤立页面即使存在，也不容易被用户和搜索引擎发现。</p>
+          </div>
+
+          <h2>可搭配的工具</h2>
+          <p><a href="../tools/vercel.html">Vercel</a> 用于部署，GitHub 用于维护提交记录，Search Console 用于观察抓取和索引状态。</p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

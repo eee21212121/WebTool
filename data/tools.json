@@ -109,6 +109,7 @@
       "description": "Web 标准、浏览器 API 和前端技术参考。",
       "category": "developer",
       "recommendation": "适合查前端概念和浏览器 API，优先级通常高于零散博客和过期教程。",
+      "detailPath": "./tools/mdn.html",
       "tags": ["文档", "前端", "Web"]
     },
     {
@@ -127,6 +128,7 @@
       "description": "查询 Web 特性的浏览器兼容性。",
       "category": "developer",
       "recommendation": "适合在使用新 CSS 或 Web API 前快速判断兼容风险，减少上线后的浏览器差异问题。",
+      "detailPath": "./tools/can-i-use.html",
       "tags": ["兼容性", "CSS", "浏览器"]
     },
     {
@@ -167,6 +169,7 @@
       "description": "海报、演示文稿和社交媒体图片设计。",
       "category": "design",
       "recommendation": "适合非专业设计人员快速产出海报、封面和展示材料，模板质量比较稳定。",
+      "detailPath": "./tools/canva.html",
       "tags": ["平面", "模板", "图片"]
     },
     {
@@ -185,6 +188,7 @@
       "description": "高质量摄影图片素材。",
       "category": "design",
       "recommendation": "适合寻找真实感较强的配图和背景图，使用前仍建议核对授权和具体使用限制。",
+      "detailPath": "./tools/unsplash.html",
       "tags": ["图片", "素材", "摄影"]
     },
     {
@@ -194,6 +198,7 @@
       "description": "知识库、项目文档和团队协作空间。",
       "category": "office",
       "recommendation": "适合整理项目资料、会议记录和个人知识库，结构灵活但需要定期维护。",
+      "detailPath": "./tools/notion.html",
       "tags": ["文档", "知识库", "协作"]
     },
     {
@@ -212,6 +217,7 @@
       "description": "高质量机器翻译和文本润色。",
       "category": "office",
       "recommendation": "适合翻译邮件、文档和产品文案，初稿质量较高，但专业内容仍需要人工校对。",
+      "detailPath": "./tools/deepl.html",
       "tags": ["翻译", "写作", "语言"]
     },
     {
@@ -230,6 +236,7 @@
       "description": "浏览器内图片压缩与格式转换。",
       "category": "data",
       "recommendation": "适合临时处理图片体积和格式，浏览器内操作让小批量素材优化更轻便。",
+      "detailPath": "./tools/squoosh.html",
       "tags": ["图片", "压缩", "转换"],
       "featured": true
     },
@@ -249,6 +256,7 @@
       "description": "JSON 格式化、校验、压缩和转换。",
       "category": "data",
       "recommendation": "适合检查接口返回、配置文件和调试数据，能快速发现括号或字段格式问题。",
+      "detailPath": "./tools/json-formatter.html",
       "tags": ["JSON", "格式化", "开发"]
     },
     {

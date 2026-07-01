@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <title>Can I use 怎么检查浏览器兼容性 | ToolDock 工具详情</title>
+    <meta name="description" content="Can I use 工具详情，说明如何检查 CSS、JavaScript 和 Web API 的浏览器兼容性，减少上线风险。">
+    <link rel="icon" href="../assets/images/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://web.shin-aier.com/tools/can-i-use">
+    <link rel="stylesheet" href="../assets/css/styles.css?v=20260701-review1">
+  </head>
+  <body>
+    <div class="form-page">
+      <header class="simple-header">
+        <a class="brand" href="../index.html" aria-label="ToolDock 首页">
+          <img src="../assets/images/logo.svg" alt="" width="38" height="38">
+          <span>
+            <strong>ToolDock</strong>
+            <small>工具详情</small>
+          </span>
+        </a>
+        <nav class="simple-nav" aria-label="页面导航">
+          <a href="../index.html">首页</a>
+          <a href="../tools.html">工具</a>
+          <a href="../tutorials.html">教程</a>
+          <a href="../guides.html">指南</a>
+        </nav>
+      </header>
+
+      <main class="about-layout">
+        <article class="content-panel">
+          <p class="eyebrow">Compatibility</p>
+          <h1>Can I use 怎么检查浏览器兼容性</h1>
+          <p class="topic-meta">官方地址：<a href="https://caniuse.com/" target="_blank" rel="noopener noreferrer">caniuse.com</a></p>
+          <p>Can I use 适合在使用新 CSS、JavaScript 或 Web API 前确认浏览器支持情况。它能帮助你判断一个特性是否能直接使用，是否需要降级方案，或者是否应该暂时避开。</p>
+
+          <h2>适合做什么</h2>
+          <ul class="check-list">
+            <li>上线前检查 CSS Grid、Flexbox、容器查询等布局特性。</li>
+            <li>确认图片格式、表单能力和浏览器 API 的支持范围。</li>
+            <li>评估是否需要 polyfill、降级样式或替代方案。</li>
+          </ul>
+
+          <h2>使用建议</h2>
+          <p>不要只看总体支持率，还要看你的用户使用哪些浏览器。如果网站主要面向移动端，需要重点看 iOS Safari 和 Android 浏览器表现。关键布局和表单功能最好在真实设备或浏览器模拟器里再检查一遍。</p>
+
+          <h2>注意事项</h2>
+          <p>兼容表只说明支持情况，不代表体验一定一致。即使标记为支持，也可能存在细节差异，因此核心页面仍要做视觉检查。</p>
+
+          <div class="summary-box">
+            <strong>推荐搭配</strong>
+            <p>先用 MDN 理解特性，再用 Can I use 查兼容性，最后在 Vercel 预览部署里检查真实页面。</p>
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
