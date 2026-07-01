@@ -234,6 +234,11 @@ function toolCard(tool) {
   const recommendation = tool.recommendation
     ? `<div class="tool-reason"><strong>推荐理由</strong><span>${escapeHtml(tool.recommendation)}</span></div>`
     : '';
+  const detailLink = tool.detailPath
+    ? `<a class="icon-button" href="${escapeAttribute(tool.detailPath)}" aria-label="查看 ${escapeAttribute(tool.name)} 详情">
+          <svg class="icon" aria-hidden="true"><use href="#icon-bookmark"></use></svg>
+        </a>`
+    : '';
 
   return `
     <article class="tool-card">
@@ -250,6 +255,7 @@ function toolCard(tool) {
         </div>
       </div>
       <div class="tool-actions">
+        ${detailLink}
         <button class="icon-button favorite-button ${favorite ? 'active' : ''}" type="button" aria-label="收藏 ${escapeAttribute(tool.name)}" data-favorite="${escapeHtml(tool.id)}">
           <svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg>
         </button>

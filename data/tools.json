@@ -57,6 +57,7 @@
       "description": "通用 AI 助手，适合写作、编程、分析和头脑风暴。",
       "category": "ai",
       "recommendation": "适合把零散想法整理成提纲、初稿或操作步骤，也适合作为学习和代码解释的第一站。",
+      "detailPath": "./tools/chatgpt.html",
       "tags": ["AI", "写作", "编程"],
       "featured": true
     },
@@ -67,6 +68,7 @@
       "description": "带来源引用的 AI 搜索，适合快速调研。",
       "category": "ai",
       "recommendation": "适合需要来源线索的调研任务，可以先用它找方向，再回到原文核对关键信息。",
+      "detailPath": "./tools/perplexity.html",
       "tags": ["AI", "搜索", "研究"],
       "featured": true
     },
@@ -77,6 +79,7 @@
       "description": "长文本理解、文档分析和创意写作助手。",
       "category": "ai",
       "recommendation": "适合处理较长材料和写作改稿，尤其适合把一批内容整理成摘要、结构和行动项。",
+      "detailPath": "./tools/claude.html",
       "tags": ["AI", "文档", "写作"]
     },
     {
@@ -95,6 +98,7 @@
       "description": "代码托管、协作开发、Issue 和 Actions 自动化。",
       "category": "developer",
       "recommendation": "适合长期维护项目、追踪问题和自动化发布，是个人项目和团队协作的基础设施。",
+      "detailPath": "./tools/github.html",
       "tags": ["代码", "协作", "DevOps"],
       "featured": true
     },
@@ -132,6 +136,7 @@
       "description": "前端应用和静态站点部署平台。",
       "category": "developer",
       "recommendation": "适合静态站、前端项目和轻量全栈应用，Git 推送后自动部署的体验很顺手。",
+      "detailPath": "./tools/vercel.html",
       "tags": ["部署", "静态站", "前端"],
       "featured": true
     },
@@ -142,6 +147,7 @@
       "description": "协作式 UI 设计、原型和设计系统平台。",
       "category": "design",
       "recommendation": "适合从线框图到高保真设计的完整流程，也适合团队沉淀组件和设计规范。",
+      "detailPath": "./tools/figma.html",
       "tags": ["UI", "原型", "协作"],
       "featured": true
     },

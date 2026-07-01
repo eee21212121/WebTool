@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <title>Vercel 适合部署静态站吗 | ToolDock 工具详情</title>
+    <meta name="description" content="Vercel 工具详情，说明静态站和前端项目的部署流程、自定义域名、预览部署与上线检查建议。">
+    <link rel="icon" href="../assets/images/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://web.shin-aier.com/tools/vercel">
+    <link rel="stylesheet" href="../assets/css/styles.css?v=20260701-tools1">
+  </head>
+  <body>
+    <div class="form-page">
+      <header class="simple-header">
+        <a class="brand" href="../index.html" aria-label="ToolDock 首页">
+          <img src="../assets/images/logo.svg" alt="" width="38" height="38">
+          <span>
+            <strong>ToolDock</strong>
+            <small>工具详情</small>
+          </span>
+        </a>
+        <nav class="simple-nav" aria-label="页面导航">
+          <a href="../index.html">首页</a>
+          <a href="../tools.html">工具</a>
+          <a href="../guides.html">指南</a>
+          <a href="../topics.html">专题</a>
+        </nav>
+      </header>
+
+      <main class="about-layout">
+        <article class="content-panel">
+          <p class="eyebrow">Deployment</p>
+          <h1>Vercel 适合部署静态站吗</h1>
+          <p class="topic-meta">官方地址：<a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">vercel.com</a></p>
+          <p>Vercel 很适合部署静态站、前端应用和轻量全栈项目。把 GitHub 仓库导入后，每次推送都会自动部署，适合个人项目快速上线，也适合团队用预览链接检查改动。</p>
+
+          <h2>适合做什么</h2>
+          <ul class="check-list">
+            <li>部署纯静态站、工具导航、文档站和作品集。</li>
+            <li>通过 GitHub 推送触发自动构建和发布。</li>
+            <li>绑定自定义域名，使用预览部署检查每次改动。</li>
+          </ul>
+
+          <h2>使用建议</h2>
+          <p>纯静态项目可以选择 Other 框架，构建命令留空，输出目录使用项目根目录。上线后要检查正式域名、404 页面、robots.txt、sitemap.xml、ads.txt 和移动端布局。</p>
+
+          <h2>注意事项</h2>
+          <p>如果页面依赖客户端读取 JSON，最好用 HTTP 服务预览，不要只双击 HTML 文件。绑定域名后要等待 DNS 和证书生效，期间访问异常不一定是代码问题。</p>
+
+          <div class="summary-box">
+            <strong>推荐搭配</strong>
+            <p>GitHub 负责代码和提交记录，Vercel 负责部署，Search Console 负责提交 sitemap 和观察收录情况。</p>
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
